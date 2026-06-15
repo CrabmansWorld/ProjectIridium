@@ -49,8 +49,14 @@
 			they don't have any benefits from them either.",
 	))
 	perks += list(list(
-		SPECIES_PERK_TYPE = SPECIES_NEGATIVE_PERK,
+		SPECIES_PERK_TYPE = SPECIES_NEUTRAL_PERK,
 		SPECIES_PERK_ICON = FA_ICON_ROBOT,
+		SPECIES_PERK_NAME = "Ulterior motives",
+		SPECIES_PERK_DESC = "Your goals may not align with the station or her crew. IMPORTANT: This is not a license to grief.",
+	))
+	perks += list(list(
+		SPECIES_PERK_TYPE = SPECIES_NEGATIVE_PERK,
+		SPECIES_PERK_ICON = FA_ICON_BOLT_LIGHTNING,
 		SPECIES_PERK_NAME = "Synthetic",
 		SPECIES_PERK_DESC = "Being synthetic, Androids are vulnernable to EMPs.",
 	))
