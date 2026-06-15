@@ -2,7 +2,7 @@
 
 Project Iridium is an unfinished fork of /tg/station.
 
-[Guide for features and maintenance](code\zz_modules_iridium\feature_guide.md)
+[Guide for features and maintenance](code/zz_modules_iridium/feature_guide.md)
 
 **Contributions from:**
 
