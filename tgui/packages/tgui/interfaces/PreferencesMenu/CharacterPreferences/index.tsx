@@ -5,7 +5,7 @@ import { exhaustiveCheck } from 'tgui-core/exhaustive';
 
 import { PageButton } from '../components/PageButton';
 import type { PreferencesMenuData } from '../types';
-import { AntagsPage } from './AntagsPage';
+// import { AntagsPage } from './AntagsPage'; // IRIDIUM DEL
 import { JobsPage } from './JobsPage';
 import { LoadoutPage } from './loadout';
 import { MainPage } from './MainPage';
@@ -13,7 +13,7 @@ import { QuirkPersonalityPage } from './QuirksPage';
 import { SpeciesPage } from './SpeciesPage';
 
 enum Page {
-  Antags,
+  // Antags,                                  // IRIDIUM DEL
   Main,
   Jobs,
   Species,
@@ -57,9 +57,9 @@ export function CharacterPreferenceWindow(props) {
   let pageContents;
 
   switch (currentPage) {
-    case Page.Antags:
-      pageContents = <AntagsPage />;
-      break;
+    // case Page.Antags:                // IRIDIUM DEL
+    //   pageContents = <AntagsPage />;
+    //   break;                         // IRIDIUM DEL END
     case Page.Jobs:
       pageContents = <JobsPage />;
       break;
@@ -143,7 +143,8 @@ export function CharacterPreferenceWindow(props) {
             </PageButton>
           </Stack.Item>
 
-          <Stack.Item grow>
+          {
+            /* <Stack.Item grow>   // IRIDIUM DEL
             <PageButton
               currentPage={currentPage}
               page={Page.Antags}
@@ -151,7 +152,9 @@ export function CharacterPreferenceWindow(props) {
             >
               Antagonists
             </PageButton>
-          </Stack.Item>
+          </Stack.Item> */
+            // IRIDIUM DEL END
+          }
 
           <Stack.Item grow>
             <PageButton

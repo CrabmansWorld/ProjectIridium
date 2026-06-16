@@ -31,10 +31,10 @@
 			SPECIES_PERK_DESC = "Nanotrasen only recognizes humans for command roles, such as Captain.",
 		))
 
-		to_add += list(list(
-			SPECIES_PERK_TYPE = SPECIES_NEUTRAL_PERK,
-			SPECIES_PERK_ICON = FA_ICON_PERSON,
-			SPECIES_PERK_NAME = "Ulterior motives",
-			SPECIES_PERK_DESC = "Your goals may not align with the station or her crew. IMPORTANT: This is not a license to grief.",
-		))
+	to_add += list(list(
+		SPECIES_PERK_TYPE = SPECIES_NEUTRAL_PERK,
+		SPECIES_PERK_ICON = FA_ICON_PERSON,
+		SPECIES_PERK_NAME = "Ulterior motives",
+		SPECIES_PERK_DESC = "Your goals may not align with the station or her crew. IMPORTANT: This is not a license to grief.",
+	))
 	return to_add
