@@ -1,3 +1,14 @@
+/datum/species/android
+	inherent_traits = list(
+		TRAIT_MUTANT_COLORS,
+	)
+	mutant_organs = list(
+		/obj/item/organ/horns = SPRITE_ACCESSORY_NONE,
+		/obj/item/organ/frills = SPRITE_ACCESSORY_NONE,
+		/obj/item/organ/spines = SPRITE_ACCESSORY_NONE,
+		/obj/item/organ/tail = SPRITE_ACCESSORY_NONE,
+	)
+
 /datum/species/android/get_species_description()
 	return "The emergent Androids, often seen as disposable. "
 
