@@ -6,8 +6,8 @@
 		/obj/item/organ/horns = SPRITE_ACCESSORY_NONE,
 		/obj/item/organ/frills = SPRITE_ACCESSORY_NONE,
 		/obj/item/organ/spines = SPRITE_ACCESSORY_NONE,
-		/obj/item/organ/tail = SPRITE_ACCESSORY_NONE,
 	)
+	digitigrade_customization = DIGITIGRADE_OPTIONAL
 
 /datum/species/android/get_species_description()
 	return "The emergent Androids, often seen as disposable. "
