@@ -1,3 +1,9 @@
+// Humans get mutant colors, tg's color picker has preset skintones anyway
+/datum/species/human
+	inherent_traits = list(
+		TRAIT_MUTANT_COLORS,
+	)
+
 /datum/species/human/get_species_description()
 	return "The Hominins of Sol-Terra."
 
