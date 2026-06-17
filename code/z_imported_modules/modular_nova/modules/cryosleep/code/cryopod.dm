@@ -539,8 +539,9 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod, 32)
 
 /// Special wall mounted cryopod for the prison, making it easier to autospawn.
 /obj/machinery/cryopod/prison
-	icon_state = "ghostcafepod-open"
-	base_icon_state = "ghostcafepod"
+	icon_state = "prisonpod-open"
+	open_icon_state = "prisonpod-open"
+	base_icon_state = "prisonpod"
 	density = FALSE
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/cryopod/prison, 18)
