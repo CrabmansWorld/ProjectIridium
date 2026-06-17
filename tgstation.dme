@@ -7020,4 +7020,7 @@
 #include "interface\fonts\spess_font.dm"
 #include "interface\fonts\tiny_unicode.dm"
 #include "interface\fonts\vcr_osd_mono.dm"
+#include "code\z_imported_modules\modular_nova\modules\cryosleep\code\ai.dm"
+#include "code\z_imported_modules\modular_nova\modules\cryosleep\code\job.dm"
+#include "code\z_imported_modules\modular_nova\modules\cryosleep\code\jobs.dm"
 // END_INCLUDE
