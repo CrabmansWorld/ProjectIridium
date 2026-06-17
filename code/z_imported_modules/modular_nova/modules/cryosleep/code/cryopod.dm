@@ -350,14 +350,14 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod, 32)
 		if (possible_target_record.name != occupant_name)
 			continue
 
-		// var/match_rank = occupant_rank == "N/A" || possible_target_record.trim == occupant_rank
+		var/match_rank = occupant_rank == "N/A" || possible_target_record.trim == occupant_rank
 		// Off-duty crew manifest changed to Assistant trim and assignment. It doesn't work for off-duties without ID, but oh well.
 		// var/match_offduty = off_duty_component && possible_target_record.trim == plexagon_selfserve_target_trim.assignment
 
-		// if(match_rank || match_offduty)
-		// 	announce_rank = possible_target_record.rank
-		// 	qdel(possible_target_record)
-		// 	break
+		if(match_rank)
+			announce_rank = possible_target_record.rank
+			qdel(possible_target_record)
+			break
 
 	if(!announce_rank) // No need to loop over all of those if we already found it beforehand.
 		for(var/list/record as anything in GLOB.ghost_records)
