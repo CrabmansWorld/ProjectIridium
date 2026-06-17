@@ -7023,4 +7023,6 @@
 #include "code\z_imported_modules\modular_nova\modules\cryosleep\code\ai.dm"
 #include "code\z_imported_modules\modular_nova\modules\cryosleep\code\job.dm"
 #include "code\z_imported_modules\modular_nova\modules\cryosleep\code\jobs.dm"
+#include "code\z_imported_modules\modular_nova\modules\cryosleep\code\cryopod.dm"
+#include "code\z_imported_modules\modular_nova\modules\cryosleep\code\config.dm"
 // END_INCLUDE
