@@ -30,7 +30,11 @@ All edits to existing files must be commented appropriately.
 
 ## Importing from other repositories
 
-WIP
+WIP. Use **z/imported_modules**.
+
+## Importing TGUI elements
+
+Make sure to state at the top of the file where the element is pulled from. As TGUI won't be tracked from upstream, make sure to note any necessary changes.
 
 ## Creating new features
 
