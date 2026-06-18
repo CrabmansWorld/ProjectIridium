@@ -10,23 +10,22 @@ This action is reserved for number-tweaks, un-commenting imported deletions, add
 All edits to existing files must be commented appropriately.
 
 - **First line of added feature/Single line:**
-  ````
+  ```
   new/line // IRIDIUM ADD
-  second/line 	// IRIDIUM ADD END ```
-  ````
+  second/line 	// IRIDIUM ADD END
+  ```
 - **First line of removed feature/Single line:**
-  ````
+  ```
   //old/line // IRIDIUM DEL
-  //second/line 	// IRIDIUM DEL END ```
-  ````
+  //second/line 	// IRIDIUM DEL END
+  ```
 - **Edited feature:**
   ```
   edited/code/first
   edited/code/last
+  // original/code/first
+  // original/code/last // IRIDIUM EDIT
   ```
-
-// original/code/first
-// original/code/last // IRIDIUM EDIT ```
 
 ## Importing from other repositories
 
