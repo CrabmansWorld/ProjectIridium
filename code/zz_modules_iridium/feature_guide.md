@@ -37,7 +37,7 @@ Make sure to state at the top of the file where the element is pulled from. As T
 
 ## Creating new features
 
-New features will need additional, separate files to be created in **code/\_\_\_IRIDIUM_DEFINES** and **code/zz_modules_iridium**, for word definitions and code respectively.
+New features will need additional, separate files to be created in **code/\_\_IRIDIUM_DEFINES** and **code/zz_modules_iridium**, for word definitions and code respectively.
 **Overrides count as new features for the purpose of maintenance.**
 To create a definition override, a separate file must be created in **code/zz_IRIDIUM_OVERRIDE_DEFINES**, and it must follow a similar path structure to the file it's overriding.
 Make sure to name files appropriately for their purpose: e.g. if a variable for /datum/species/human must be overridden, the file should be named human_overrides.dm or similar.
