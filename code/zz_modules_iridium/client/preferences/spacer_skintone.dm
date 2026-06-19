@@ -1,16 +1,16 @@
 /datum/preference/choiced/skin_tone
-	savefile_key = "skin_tone"
+	savefile_key = "spacer_tone"
 	savefile_identifier = PREFERENCE_CHARACTER
 	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
-	relevant_inherent_trait = TRAIT_USES_SKINTONES
+	relevant_inherent_trait = TRAIT_USES_SPACERSKIN
 
-/datum/preference/choiced/skin_tone/init_possible_values()
-	return GLOB.skin_tones
+/datum/preference/choiced/spacer_tone/init_possible_values()
+	return GLOB.spacer_tones
 
-/datum/preference/choiced/skin_tone/compile_constant_data()
+/datum/preference/choiced/spacer_tone/compile_constant_data()
 	var/list/data = ..()
 
-	data[CHOICED_PREFERENCE_DISPLAY_NAMES] = GLOB.skin_tone_names
+	data[CHOICED_PREFERENCE_DISPLAY_NAMES] = GLOB.spacer_tone_names
 
 	var/list/to_hex = list()
 	for (var/choice in get_choices())

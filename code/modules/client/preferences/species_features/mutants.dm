@@ -13,7 +13,8 @@
 	return !(TRAIT_FIXED_MUTANT_COLORS in species.inherent_traits)
 
 /datum/preference/color/mutant_color/create_default_value()
-	return sanitize_hexcolor("[pick("7F", "FF")][pick("7F", "FF")][pick("7F", "FF")]")
+	return sanitize_hexcolor("FFFFFF")
+	// return sanitize_hexcolor("[pick("7F", "FF")][pick("7F", "FF")][pick("7F", "FF")]") // IRIDIUM EDIT
 
 /datum/preference/color/mutant_color/apply_to_human(mob/living/carbon/human/target, value)
 	target.dna.features[FEATURE_MUTANT_COLOR] = value

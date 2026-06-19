@@ -1,8 +1,4 @@
-// Humans get mutant colors, tg's color picker has preset skintones anyway
 /datum/species/human
-	inherent_traits = list(
-		TRAIT_MUTANT_COLORS,
-	)
 	mutant_organs = list(
 		/obj/item/organ/horns = SPRITE_ACCESSORY_NONE,
 		/obj/item/organ/spines = SPRITE_ACCESSORY_NONE,
@@ -49,3 +45,14 @@
 		SPECIES_PERK_DESC = "Your goals may not align with the station or her crew. IMPORTANT: This is not a license to grief.",
 	))
 	return to_add
+
+/datum/species/human/spacer
+	name = "Human Spacer"
+	inherent_traits = list(
+		TRAIT_USES_SPACERSKIN,
+	)
+	id = SPECIES_SPACER
+	examine_limb_id = SPECIES_HUMAN
+	inert_mutation = /datum/mutation/elastic_arms
+
+
