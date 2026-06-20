@@ -1,6 +1,10 @@
 // Defines for Species IDs. Used to refer to the name of a species, for things like bodypart names or species preferences.
 #define SPECIES_SPACER "humanspacer"
 
+#define SPECIES_ANTIHEPIAN "antihepian"
+#define SPECIES_FRONTIERSHADOW "frontiershadow"
+
+
 // Makes a separate skintone list for spacer races (Consult The Lore:tm:)
 GLOBAL_LIST_INIT(spacer_tones, sort_list(list(
 	"albino",

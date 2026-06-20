@@ -1,10 +1,3 @@
-/datum/species/human
-	mutant_organs = list(
-		/obj/item/organ/horns = SPRITE_ACCESSORY_NONE,
-		/obj/item/organ/spines = SPRITE_ACCESSORY_NONE,
-		/obj/item/organ/tail/lizard = SPRITE_ACCESSORY_NONE,
-	)
-
 /datum/species/human/get_species_description()
 	return "The Hominins of Sol-Terra."
 
@@ -46,7 +39,10 @@
 	))
 	return to_add
 
-/datum/species/human/spacer
+// SUBTYPE DATA
+// Used by the subspecies selector
+
+/datum/species/human/subtype/humanspacer
 	name = "Human Spacer"
 	inherent_traits = list(
 		TRAIT_USES_SPACERSKIN,

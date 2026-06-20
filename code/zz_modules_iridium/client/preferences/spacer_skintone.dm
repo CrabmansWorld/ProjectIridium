@@ -1,4 +1,4 @@
-/datum/preference/choiced/skin_tone
+/datum/preference/choiced/spacer_tone
 	savefile_key = "spacer_tone"
 	savefile_identifier = PREFERENCE_CHARACTER
 	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
@@ -26,5 +26,5 @@
 
 	return data
 
-/datum/preference/choiced/skin_tone/apply_to_human(mob/living/carbon/human/target, value)
+/datum/preference/choiced/spacer_tone/apply_to_human(mob/living/carbon/human/target, value)
 	target.skin_tone = value
