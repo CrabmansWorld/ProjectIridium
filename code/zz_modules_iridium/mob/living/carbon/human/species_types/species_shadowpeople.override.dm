@@ -42,3 +42,6 @@
 	)
 
 	return to_add
+
+/datum/preference/choiced/species/subtype/init_possible_values()
+	return assoc_to_keys(GLOB.shadow)

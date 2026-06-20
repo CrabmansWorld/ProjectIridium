@@ -42,7 +42,10 @@
 // SUBTYPE DATA
 // Used by the subspecies selector
 
-/datum/species/human/subtype/humanspacer
+/datum/species/human/human
+	id = SPECIES_HUMAN
+
+/datum/species/human/humanspacer
 	name = "Human Spacer"
 	inherent_traits = list(
 		TRAIT_USES_SPACERSKIN,
@@ -50,5 +53,4 @@
 	id = SPECIES_SPACER
 	examine_limb_id = SPECIES_HUMAN
 	inert_mutation = /datum/mutation/elastic_arms
-
 
