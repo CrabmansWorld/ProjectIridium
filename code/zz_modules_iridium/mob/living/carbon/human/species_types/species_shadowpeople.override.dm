@@ -43,5 +43,15 @@
 
 	return to_add
 
-/datum/preference/choiced/species/subtype/init_possible_values()
-	return assoc_to_keys(GLOB.shadow)
+// SUBTYPE DATA
+// Used by the subspecies selector
+/datum/species/shadow/shadow
+	id = SPECIES_SHADOW
+
+/datum/species/shadow/frontiershadow
+	id = SPECIES_FRONTIERSHADOW
+	name = "Frontier Shadowperson"
+
+/datum/species/shadow/antihepian
+	id = SPECIES_ANTIHEPIAN
+	name = "Antihepian Anomaly"
