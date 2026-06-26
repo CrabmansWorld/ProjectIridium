@@ -1,3 +1,6 @@
+/datum/species/human
+	examine_limb_id = SPECIES_HUMAN
+
 /datum/species/human/get_species_description()
 	return "The Hominins of Sol-Terra."
 
@@ -42,15 +45,17 @@
 // SUBTYPE DATA
 // Used by the subspecies selector
 
-/datum/species/human/human
+/datum/species/human/subtype
+	examine_limb_id = SPECIES_HUMAN
+
+/datum/species/human/subtype/human
 	id = SPECIES_HUMAN
 
-/datum/species/human/humanspacer
+/datum/species/human/subtype/humanspacer
 	name = "Human Spacer"
 	inherent_traits = list(
 		TRAIT_USES_SPACERSKIN,
 	)
 	id = SPECIES_SPACER
-	examine_limb_id = SPECIES_HUMAN
 	inert_mutation = /datum/mutation/elastic_arms
 

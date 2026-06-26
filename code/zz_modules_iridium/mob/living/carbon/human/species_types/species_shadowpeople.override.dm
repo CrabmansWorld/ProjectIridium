@@ -45,13 +45,16 @@
 
 // SUBTYPE DATA
 // Used by the subspecies selector
-/datum/species/shadow/shadow
+/datum/species/shadow/subtype
+	examine_limb_id = SPECIES_SHADOW
+
+/datum/species/shadow/subtype/shadow
 	id = SPECIES_SHADOW
 
-/datum/species/shadow/frontiershadow
+/datum/species/shadow/subtype/frontiershadow
 	id = SPECIES_FRONTIERSHADOW
 	name = "Frontier Shadowperson"
 
-/datum/species/shadow/antihepian
+/datum/species/shadow/subtype/antihepian
 	id = SPECIES_ANTIHEPIAN
 	name = "Antihepian Anomaly"

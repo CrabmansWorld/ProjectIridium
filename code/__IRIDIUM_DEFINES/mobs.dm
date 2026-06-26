@@ -29,3 +29,18 @@ GLOBAL_LIST_INIT(spacer_tone_names, list(
 	"mixed3" = "Coffee",
 	"mixed4" = "Macadamia",
 ))
+
+// Subspecies
+
+GLOBAL_LIST_INIT(selectable_subtypes, init_selectable_subtypes())
+
+/proc/init_selectable_subtypes()
+	var/list/keys = list()
+	// FIND HUMAN SUBSPECIES
+	for (var/datum/species/human/subtype/sub_unit as anything in /datum/species/human/subtype)
+		keys += sub_unit
+
+	// FIND SHADOW SUBSPECIES
+	for (var/datum/species/shadow/subtype/sub_unit as anything in /datum/species/shadow/subtype)
+		keys += sub_unit
+	return keys
